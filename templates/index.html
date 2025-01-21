@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>URL Shortener</title>
+    <link rel="stylesheet" href="/static/index.css">
+</head>
+<body>
+    <h1>URL Shortener</h1>
+    <form id="url-form">
+        <input type="text" id="original-url" placeholder="Enter URL" required>
+        <input type="text" id="custom-alias" placeholder="Custom Alias (Optional)">
+        <input type="datetime-local" id="expiry-date" placeholder="Expiry Date (Optional)">
+        <button type="submit">Shorten</button>
+    </form>
+    <p id="result"></p>
+    <div id="qrcode-container"></div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
